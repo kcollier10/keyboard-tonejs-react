@@ -52,6 +52,3 @@ export function playC5() {
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease("C5", "8n");
 }
-
-
-

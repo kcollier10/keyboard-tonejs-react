@@ -6,7 +6,7 @@ import * as Tone from 'tone'
 
 
 import {
-    playC4,
+    playC4,q
     playDb4,
     playD4,
     playEb4,
@@ -39,16 +39,16 @@ function App() {
               <div className="white-key" onClick={playB4}></div>
               <div className="white-key" onClick={playC5}></div>
           </div>
-          <div className="media-buttons">
-              <button id="recordButton" autocomplete="off" title="Record"placeholder="RECORD"></button>
-              <button disabled id="pause" autocomplete="off" title="Pause" placeholder="PAUSE"></button>
-              <button disabled id="play" autocomplete="off" title="Play" placeholder="PLAY"></button>
-              <button disabled id="stop" autocomplete="off" title="Stop" placeholder="STOP"></button>
-              <button disabled id="save" autocomplete="off" title="Save" placeholder="SAVE"></button>
-          </div>
-          <div className="user-created-audio">
-              <div id="audio-file"></div>
-          </div>
+          {/*<div className="media-buttons">*/}
+          {/*    <button id="recordButton" autocomplete="off" title="Record"placeholder="RECORD"></button>*/}
+          {/*    <button disabled id="pause" autocomplete="off" title="Pause" placeholder="PAUSE"></button>*/}
+          {/*    <button disabled id="play" autocomplete="off" title="Play" placeholder="PLAY"></button>*/}
+          {/*    <button disabled id="stop" autocomplete="off" title="Stop" placeholder="STOP"></button>*/}
+          {/*    <button disabled id="save" autocomplete="off" title="Save" placeholder="SAVE"></button>*/}
+          {/*</div>*/}
+          {/*<div className="user-created-audio">*/}
+          {/*    <div id="audio-file"></div>*/}
+          {/*</div>*/}
       </div>
   );
 }

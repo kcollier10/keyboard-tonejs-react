@@ -32,9 +32,6 @@ class Toggle extends React.Component {
 
 ReactDOM.render(<Toggle />, document.getElementById('app'));
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-
 class Mood extends React.Component {
     constructor(props) {
         super(props);
@@ -61,9 +58,7 @@ class Mood extends React.Component {
 
 ReactDOM.render(<Mood />, document.getElementById('app'));
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Child } from './Child';
+// import { Child } from './Child';
 
 class Parent extends React.Component {
     constructor(props) {
@@ -90,9 +85,8 @@ ReactDOM.render(
     document.getElementById('app')
 );
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Child } from './Child';
+
+// import { Child } from './Child';
 
 class Parent extends React.Component {
     constructor(props) {
@@ -119,8 +113,8 @@ ReactDOM.render(
     document.getElementById('app')
 );
 
-import React from 'react';
-import ReactDOM from 'react-dom';
+// import React from 'react';
+// import ReactDOM from 'react-dom';
 import { Child } from './Child';
 import { Sibling } from './Sibling';
 
@@ -154,7 +148,6 @@ ReactDOM.render(
     document.getElementById('app')
 );
 
-import React from 'react';
 
 export class Child extends React.Component {
     constructor(props) {
@@ -184,8 +177,6 @@ export class Child extends React.Component {
     }
 }
 
-import React from 'react';
-
 export class Sibling extends React.Component {
     render() {
         const name = this.props.name;
@@ -199,8 +190,6 @@ export class Sibling extends React.Component {
     }
 }
 
-import React from 'react';
-import ReactDOM from 'react-dom';
 import { Video } from './Video';
 import { Menu } from './Menu';
 
@@ -240,7 +229,6 @@ ReactDOM.render(
     document.getElementById('app')
 );
 
-import React from 'react';
 
 export class Video extends React.Component {
     render() {
@@ -252,7 +240,6 @@ export class Video extends React.Component {
     }
 }
 
-import React from 'react';
 
 export class Menu extends React.Component {
     constructor(props) {
@@ -262,7 +249,7 @@ export class Menu extends React.Component {
     handleClick(e) = {
     var text = e.target.value;
     this.props.chooseVideo(text);
-},
+}
 render() {
     return (
         <form onClick={this.handleClick}>

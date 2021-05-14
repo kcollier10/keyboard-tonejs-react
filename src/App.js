@@ -6,7 +6,7 @@ import * as Tone from 'tone'
 
 
 import {
-    playC4,q
+    playC4,
     playDb4,
     playD4,
     playEb4,
